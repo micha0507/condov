@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    overflow: hidden;
+    display: flex;
+}
+label {
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.contenido{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+.marcos {
+    color: rgb(0, 0, 0);
+    padding: 0;
+    text-align: center;
+    border: 1px solid #ccc;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    flex: 1;
+    text-decoration: none;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    padding: 10px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.marcos:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.resumen-fondos {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    flex-direction: column;
+}
+#pagos {
+border-color: green;
+}
+#gastos {
+    border-color: red;    
+}
+.btn-modal {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-modal:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+form {
+    width: 50%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    animation: fadeIn 1s ease-in-out;
+}
+.factor {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Quitar flechas de input[type="number"] */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+button {
+    width: 60%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 10px;
+
+    
+}
+select {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
